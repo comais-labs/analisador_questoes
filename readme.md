@@ -61,6 +61,24 @@ model
 ---
 
 ## Instruções de Uso
+Para realizar todas as etapas dessa instrução apague todos os arquivos contidos nos diretórios(deixe a estrutura de pastas) :
+
+```
+data\imgs\imgs_dataset
+data\imgs\imgs_pages
+dataset\augmented
+dataset\augmented\images
+dataset\augmented\labels
+dataset\augmented\train\images
+dataset\augmented\train\labels
+dataset\augmented\val\images
+dataset\augmented\val\labels
+dataset\original
+dataset\original\images
+dataset\original\labels
+runs
+
+```
 
 ### 1. Geração de Imagens
 
