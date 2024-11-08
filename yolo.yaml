@@ -1,0 +1,27 @@
+# Nome do projeto
+#yolo train model=data/model/yolov11n_best.pt data=yolo.yaml
+name: yolov11_questions_detect
+
+datasets_dir: dataset\augmented
+# Caminhos para os dados de treino e validação
+train: dataset\augmented\train\images  # Pasta de imagens de treino
+val: dataset\augmented\val\images      # Pasta de imagens de validação
+
+# Número de classes
+nc: 3  # Substitua pelo número correto de classes no seu dataset
+
+# Nomes das classes
+names: ['questao', 'texto', 'topic']  # Liste as classes correspondentes
+
+# Hiperparâmetros do treinamento
+hyp: hyp.scratch-low.yaml  # Usar o arquivo padrão de hiperparâmetros
+
+# Parâmetros adicionais (opcional)
+epochs: 200                # Quantidade de épocas
+batch_size: 16           # Tamanho do lote
+img_size: 640             # Tamanho da imagem de entrada
+optimizer: Adam            # Otimizador a ser utilizado (SGD, Adam, etc.)
+
+# Outros ajustes (opcional)
+augment: True             # Habilitar augmentação de dados
+workers: 8                # Número de workers para carregamento dos dados
